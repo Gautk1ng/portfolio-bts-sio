@@ -1,96 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/83d4615a65.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <a href="#main"><i class="fa-solid fa-house fa-2x"></i></a>
+            </div>
+            <div class="pageLink">
+                <a href="#profil">À PROPOS</a>
+                <a href="#projets">MES PROJETS</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+            <div>
+                <a href="https://github.com/Gautk1ng" target="_blank"><i class="fa-brands fa-github fa-3x"></i></a>
+                <a href="https://www.linkedin.com/in/gauthier-dubois3/" target="_blank"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+            </div>
+        </header>
+        <section id="main">
+            <div class="title-card">
+                <h1>Gauthier Dubois</h1>
+                <h5>Développeur Informatique</h5>
+            </div>
+        </section>
+        <section id="profil">
+            <div class="a-propos">
+                <div>
+                    <h2>À propos de moi</h2>
+                    <p>Passionné par la programmation et les nouvelles technologies, je
+                        suis actuellement en deuxième année de BTS SIO et j’aspire à
+                        devenir développeur Informatique. Pour approfondir mes
+                        connaissances et compétences tout en étant proche des entreprises,
+                        je souhaite poursuivre ma formation en apprentissage dans un cycle
+                        ingénieur.
+                    </p>
+                    <div class="profile-link">
+                        <a href="files/CV Dubois Gauthier 2025.pdf" target="_blank" class="button-link">Voir mon CV</a>
+                        <a href="btssio.html" class="button-link">BTS SIO</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/photoGauthier.webp" alt="Photo Gauthier" style="max-width: 100%; height: 500px; border-radius: 15px;">
+                </div>
+            </div>
+            <div class="competence">
+                <h2>Mes Compétences</h2>
+                <div class="BoxCube">
+                    <div>
+                        <h3>Language de Programmation</h3>
+                        <div class="small-gap">
+                            <span style="color: #f16529;"><i class="fa-brands fa-html5 fa-5x"></i></span>
+                            <span style="color: #379ad6;"><i class="fa-brands fa-css3-alt fa-5x"></i></span>
+                            <span style="color: #f7df1e;"><i class="fa-brands fa-js fa-5x"></i></span>
+                            <span style="color: #8a91bc;"><i class="fa-brands fa-php fa-5x"></i></span>
+                            <img src="images/logoMySQL.png" alt="MySQL" width="80" height="80">
+                            <span style="color: red;"><i class="fa-brands fa-java fa-5x"></i></span>
+                        </div>
+                    </div>
+                    <div class="row-box">
+                        <div>
+                            <h3>Framework</h3>
+                            <div class="small-gap">
+                                <span style="color: #61dbfb;"><i class="fa-brands fa-react fa-5x"></i></span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Logiciel</h3>
+                            <div class="small-gap">
+                                <span style="color: #0f8cc4;"><i class="fa-brands fa-wordpress fa-5x"></i></span>
+                                <span style="color: #de4c36;"><i class="fa-brands fa-git-alt fa-5x"></i></span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Gestion des Outils</h3>
+                            <div class="small-gap">
+                                <span><i class="fa-brands fa-github fa-5x"></i></span>
+                                <img src="images/visual-studio-code.png" alt="Visual Studio Code" width="80" height="80">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projets">
+            <h2>Mes Projets</h2>
+            <div class="gridBox">
+                <div class="smallBox">
+                    <h3>Client Lourd</h3>
+                </div>
+                <div class="smallBox">
+                    <h3>Client Léger</h3>
+                </div>
+            </div>
+            <h2>Mes Certificat</h2>
+            <div class="gridBox">
+                <div class="smallBox">
+                    <h3>Language C</h3>
+                </div>
+                <div class="smallBox">
+                    <h3>HTML / CSS</h3>
+                </div>
+                <div class="smallBox">
+                    <h3>PHP / MySQL</h3>
+                </div>
+                <div class="smallBox">
+                    <h3>JS</h3>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Me Contacter</h2>
+            <div class="contact-content">
+                <div class="contact-header">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit porro quae itaque vitae modi. Inventore nisi voluptas porro labore quis ipsa nobis beatae quod consequatur iure, voluptates corrupti atque sed.
+                        Tempore officia voluptatum maxime aliquid? Accusamus possimus nam in praesentium voluptas tenetur odio facilis nihil dicta. Tenetur, debitis neque sunt error quia, consequuntur minima nobis corporis iure fugiat quasi ratione.
+                        A voluptas omnis nisi doloribus officiis saepe autem maiores nobis deserunt labore. Eius consequuntur amet, quo fugiat error optio? Odio at nihil quod, unde impedit dolores a ea sit nemo?</p>
+                        <br>
+                        <a href="files/CV Dubois Gauthier 2025.pdf" target="_blank" class="button-link">Voir mon CV</a>
+                    </div>
+                </div>
+                <div class="contact-list">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gauthierdubois@19gmail.com" target="_blank" class="contact-card-content">
+                        <div>
+                            <i class="fa-solid fa-envelope fa-3x"></i>
+                        </div>
+                        <div>
+                            <h3>E-Mail</h3>
+                            <p>gauthierdubois19@gmail.com</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Gautk1ng" target="_blank" class="contact-card-content">
+                        <div>
+                            <i class="fa-brands fa-github fa-3x"></i>
+                        </div>
+                        <div>
+                            <h3>GitHub</h3>
+                            <p>gautk1ng</p>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gauthier-dubois3/" target="_blank" class="contact-card-content">
+                        <div>
+                            <i class="fa-brands fa-linkedin fa-3x"></i>
+                        </div>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p>Gauthier Dubois</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer style="text-align: center;">
+            <p>&copy; 2025 - Gauthier Dubois</p>
+        </footer>
+    </body>
 </html>
