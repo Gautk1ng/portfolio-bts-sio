@@ -12,24 +12,25 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #ffffffbf;
     position: sticky;
-    top: 1em;
+    top: 0;
     z-index: 1;
-    padding: 0em 2em;
+    padding: 1em 2em;
 }
 nav a {
     font-size: 18px;
 }
-nav .test {
+nav .github {
     transition: color 0.15s ease;
 }
-nav .test:hover {
-    color: white;
+nav .github:hover {
+    color: #787878;
 }
-nav .test2 {
+nav .linkedin {
     transition: color 0.15s ease;
 }
-nav .test2:hover {
+nav .linkedin:hover {
     color: #0a66c2;
 }
 nav .nav-link a {
@@ -128,6 +129,7 @@ nav .nav-link a:hover {
 #info .epreuve {
     display: flex;
     justify-content: space-evenly;
+    margin: 3em 0em;
 }
 #info .epreuve div {
     border: 2px solid;

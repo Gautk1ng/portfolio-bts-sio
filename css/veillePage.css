@@ -6,30 +6,49 @@ a {
     color: black;
     text-decoration: none;
 }
+h2 {
+    display: inline-block;
+    border: 2px solid;
+    text-align: center;
+    position: relative;
+    top: 1em;
+    left: 5em;
+    width: auto;
+    padding: 10px;
+    margin: 0;
+}
+.flexBox {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 4em 10em;
+}
 
 /* Navigation */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #ffffffbf;
     position: sticky;
-    top: 1em;
+    top: 0;
     z-index: 1;
-    padding: 0em 2em;
+    padding: 1em 2em;
 }
 nav a {
     font-size: 18px;
 }
-nav .test {
+nav .github {
     transition: color 0.15s ease;
 }
-nav .test:hover {
-    color: white;
+nav .github:hover {
+    color: #787878;
 }
-nav .test2 {
+nav .linkedin {
     transition: color 0.15s ease;
 }
-nav .test2:hover {
+nav .linkedin:hover {
     color: #0a66c2;
 }
 nav .nav-link a {
@@ -43,4 +62,51 @@ nav .nav-link a {
 nav .nav-link a:hover {
     box-shadow: 5px 5px;
     background-color: greenyellow;
+}
+
+.boxTextArea {
+    border: 2px solid;
+    box-shadow: 5px 5px;
+    width: 75%;
+    padding: 25px;
+    margin: 5em auto;
+}
+.boxTextArea p {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.flexBox a {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    border: 2px solid;
+    box-shadow: 3px 3px;
+    padding: 15px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.flexBox a h3 {
+    margin: 0;
+}
+.flexBox a:hover {
+    transform: scale(1.25);
+    box-shadow: 7px 7px;
+}
+.flexBox article {
+    border: 2px solid;
+    box-shadow: 5px 5px;
+    height: 11em;
+    max-height: 11em;
+    padding: 25px;
+}
+.flexBox article a {
+    display: inline-block;
+    transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+.flexBox article a:hover {
+    background-color: greenyellow;
+    transform: scale(1.25);
+    box-shadow: 5px 5px;
 }
