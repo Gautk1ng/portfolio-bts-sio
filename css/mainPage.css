@@ -73,7 +73,7 @@ nav .nav-link a:hover {
     justify-content: space-evenly;
     align-items: center;
 }
-#intro div {
+#intro .title {
     text-align: center;
     font-size: 34px;
     line-height: 0.5;
@@ -113,7 +113,7 @@ nav .nav-link a:hover {
     font-size: 18px;
     border: 2px solid;
     box-shadow: 3px 3px;
-    width: 100px;
+    width: auto;
     margin: 0em 0.5em;
     padding: 10px;
     transition: background-color 0.25s ease, box-shadow 0.25s ease;
@@ -133,9 +133,9 @@ nav .nav-link a:hover {
 #profil .competence {
     margin: 5em 0em;
 }
-#profil .paragraph {
+#profil .competence .paragraph {
     font-size: 20px;
-    padding-left: 10em;
+    padding: 0em 10em;
 }
 #profil .competence .flexRow {
     outline: 2px solid;
@@ -168,6 +168,10 @@ nav .nav-link a:hover {
     padding: 25px;
     transition: transform 0.25s ease;
 }
+#profil .competence .flexBox article img {
+    max-width: 100%;
+    max-height: 100%;
+}
 #profil .competence .flexBox article p {
     font-size: 20px;
 }
@@ -181,15 +185,15 @@ nav .nav-link a:hover {
     display: flex;
     justify-content: space-evenly;
 }
-#profil .work .work-content {
+#profil .work .work-header .work-content {
     border-left: 3px solid;
     padding-left: 2em;
     font-size: 20px;
 }
-#profil .work .work-content h3 {
+#profil .work .work-header .work-content h3 {
     position: relative;
 }
-#profil .work .work-content h3::before {
+#profil .work .work-header .work-content h3::before {
     content: "";
     position: absolute;
     left: -2.15em;
@@ -199,7 +203,7 @@ nav .nav-link a:hover {
     background-color: black;
     border-radius: 50%;
 }
-#profil .work .work-image {
+#profil .work .work-header .work-image {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -251,7 +255,7 @@ nav .nav-link a:hover {
 #projets .workProject {
     display: block;
     text-align: center;
-    width: 15%;
+    width: auto;
     font-size: 20px;
     border: 2px solid;
     box-shadow: 5px 5px black;
@@ -295,7 +299,7 @@ nav .nav-link a:hover {
 #contact .contact-content .contact-article {
     font-size: 20px;
     line-height: 1.5;
-    width: 600px;
+    max-width: 600px;
 }
 #contact .contact-content .contact-article a {
     border: 2px solid;
@@ -324,4 +328,132 @@ nav .nav-link a:hover {
 #contact .contact-content .contact-list .contact-card-content:hover {
     box-shadow: 3px 3px black;
     transform: rotate(3deg);
+}
+
+@media only screen and (max-width: 1200px) {
+    nav a {
+        font-size: 14px;
+    }
+    nav .nav-link a {
+        padding: 10px;
+    }
+    #profil .a-propos article p {
+        font-size: 18px;
+    }
+    #profil .a-propos img {
+        transform: scale(0.8);
+    }
+    #profil .competence .paragraph {
+        font-size: 18px;
+        padding: 0em 5em;
+    }
+    #profil .competence .flexBox {
+        margin: 4em 3em;
+    }
+    #profil .competence .flexBox article p {
+        font-size: 18px;
+    }
+    #profil .work .work-header .work-content {
+        font-size: 16px;
+    }
+    #profil .work .work-header .work-image {
+        transform: scale(0.8);
+    }
+    #projets .flexBox {
+        margin: 4em 3em;
+    }
+    #projets .flexContainer {
+        width: 90%;
+    }
+    #contact .contact-content .contact-article {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    nav .nav-link a {
+        margin: 0px 5px;
+    }
+    #intro .title {
+        font-size: 26px;
+    }
+    #intro i {
+        font-size: 36px;
+    }
+    #profil .a-propos {
+        flex-direction: column;
+        align-items: center;
+    }
+    #profil .a-propos article div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #profil .competence .flexBox article {
+        width: 40%;
+    }
+    #profil .work .work-header {
+        justify-content: center;
+    }
+    #profil .work .work-header .work-image {
+        display: none;
+    }
+    #projets .flexContainer {
+        width: 95%;
+    }
+    #contact .contact-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    h2 {
+        font-size: 18px;
+    }
+    .flexBox {
+        justify-content: center;
+    }
+    nav .nav-link {
+        display: none;
+    }
+    #profil .a-propos article p {
+        font-size: 14px;
+        padding: 0px 15px;
+    }
+    #profil .a-propos article a {
+        font-size: 14px;
+    }
+    #profil .competence .paragraph {
+        font-size: 14px;
+        padding: 0em 2em;
+    }
+    #profil .competence .flexRow {
+        transform: scale(0.75);
+    }
+    #profil .competence .flexBox article {
+        width: 70%;
+    }
+    #profil .competence .flexBox article p {
+        font-size: 14px;
+    }
+    #profil .work .work-header .work-content {
+        font-size: 12px;
+    }
+    #profil .work .work-header .work-content h3::before {
+        left: -2.35em;
+    }
+    #projets .flexContainer {
+        flex-direction: column;
+        width: 85%;
+    }
+    #projets .flexContainer aside {
+        width: auto;
+    }
+    #projets .flexContainer aside p {
+        font-size: 16px;
+    }
+    #contact .contact-content .contact-article {
+        font-size: 16px;
+        padding: 0px 10px;
+    }
 }

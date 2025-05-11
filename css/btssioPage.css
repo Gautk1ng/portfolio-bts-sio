@@ -1,3 +1,4 @@
+/* Global */
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
@@ -149,4 +150,55 @@ nav .nav-link a:hover {
 }
 #info .epreuve div a:hover {
     background-color: greenyellow;
+}
+
+@media only screen and (max-width: 1200px) {
+    nav a {
+        font-size: 14px;
+    }
+    nav .nav-link a {
+        padding: 10px;
+    }
+    #info .box-bts {
+        width: 85%;
+    }
+    #info .box-etat {
+        width: 85%;
+    }
+    #info .box-option div {
+        width: 40%;
+    }
+    #info .box-travail {
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    nav .nav-link {
+        display: none;
+    }
+    #info .box-option {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        margin: auto;
+    }
+    #info .box-option div {
+        width: 80%;
+    }
+    #info .epreuve {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    #info .box-option {
+        padding: 0;
+    }
+    #info .epreuve div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 }

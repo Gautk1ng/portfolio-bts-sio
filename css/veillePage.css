@@ -1,3 +1,4 @@
+/* Global */
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
@@ -12,17 +13,17 @@ h2 {
     text-align: center;
     position: relative;
     top: 1em;
-    left: 5em;
     width: auto;
     padding: 10px;
     margin: 0;
 }
 .flexBox {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 25px;
-    margin: 4em 10em;
+    margin: 3em auto;
 }
 
 /* Navigation */
@@ -64,49 +65,68 @@ nav .nav-link a:hover {
     background-color: greenyellow;
 }
 
-.boxTextArea {
+#listVeille {
+    margin: 3em 10em;
+}
+#listVeille .boxTextArea {
     border: 2px solid;
     box-shadow: 5px 5px;
     width: 75%;
     padding: 25px;
     margin: 5em auto;
 }
-.boxTextArea p {
+#listVeille .boxTextArea p {
     font-size: 20px;
     line-height: 1.5;
     text-align: justify;
 }
-
-.flexBox a {
+#listVeille .flexBox a {
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: center;
+    background-color: white;
     border: 2px solid;
     box-shadow: 3px 3px;
     padding: 15px;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-.flexBox a h3 {
+#listVeille .flexBox a h3 {
     margin: 0;
 }
-.flexBox a:hover {
+#listVeille .flexBox a:hover {
     transform: scale(1.25);
     box-shadow: 7px 7px;
 }
-.flexBox article {
-    border: 2px solid;
-    box-shadow: 5px 5px;
-    height: 11em;
-    max-height: 11em;
-    padding: 25px;
+
+@media only screen and (max-width: 1200px) {
+    nav a {
+        font-size: 14px;
+    }
+    nav .nav-link a {
+        padding: 10px;
+    }
+
+    #listVeille .boxTextArea {
+        width: 90%;
+    }
+    #listVeille {
+        margin: 3em 5em;
+    }
 }
-.flexBox article a {
-    display: inline-block;
-    transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+@media only screen and (max-width: 1000px) {
+    nav .nav-link {
+        display: none;
+    }
+    #listVeille {
+        margin: 3em 3em;
+    }
 }
-.flexBox article a:hover {
-    background-color: greenyellow;
-    transform: scale(1.25);
-    box-shadow: 5px 5px;
+@media only screen and (max-width: 450px) {
+    #listVeille {
+        margin: 3em 1em;
+    }
+    #listVeille .boxTextArea {
+        padding: 10px;
+    }
 }
