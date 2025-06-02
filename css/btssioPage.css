@@ -89,6 +89,10 @@ nav .nav-link a:hover {
     padding: 10px 3em;
     margin: 5em auto;
 }
+#info .box-option .optChosen {
+    border: 7px solid #0a66c2;
+    box-shadow: 7px 7px;
+}
 #info .box-option div {
     border: 2px solid;
     box-shadow: 5px 5px;
